@@ -1,0 +1,93 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+
+html, body {
+  cursor: url(fish.gif), pointer;
+  color: white;
+  margin:0;
+  font-family: Verdana;
+  background-image: url('cloudynite.gif');
+  background-repeat: repeat;
+        -webkit-animation: slidein 1000s;
+        animation: slidein 1000s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;              
+}
+
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:100px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:100px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+}
+
+#hello {
+  margin-top: 25px;
+  color: #131313;
+  background: #A5E8A5;
+  font-size: 3em;
+text-shadow: 0 0 10px #FFFFFF, 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+}
+
+
+.words {
+  padding: 25px 50px 75px 100px;
+  margin-top: 100px;
+  margin-left: 20vw;
+  display:flex;
+  height:75vh;
+  width: 50vw;
+  border-radius: 50px;
+  z-index: 10;
+  background-color:#A5E8A5;
+  border:3px solid white;
+  border-top:none;
+  border-bottom:none;
+  box-shadow: -0.3em 0 .5em black;
+  display:flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  max-width:100%;
+}
+
+.sheep {
+  height:100vh;
+  z-index: -999;
+  background-image:url('sheep.gif');
+  background-repeat: repeat-x;;
+  -webkit-animation: bounce 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+  transform:translate(0px, 0px);
+  }
+  25% {
+    transform:translate(-5px, -10px);
+
+  }
+  50% {
+    transform:translate(-10px, 0px);
+  }
+  
+  75% {
+    transform:translate(-5px, -10px);
+  }
+  100%{
+    transform:translate(0px, 0px);
+  }
+}
